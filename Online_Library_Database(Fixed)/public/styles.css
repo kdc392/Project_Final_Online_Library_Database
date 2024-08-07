@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+b {
+  font-family: serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #cf9cd3;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0 16px;
+}
+header {
+  background-color: #974cb0;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+footer {
+  text-align: center;
+  margin-top: auto;
+  color: #a5a4a4;
+}
+.container {
+  margin: auto;
+  width: 50%;
+  padding: 12px 0;
+  text-align: justify;
+}
+form.searchField {
+  position: relative;
+  padding: 2px;
+  width: 50%;
+  margin: auto;
+}
+form.searchField input {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  padding: 5px;
+  margin-left: auto;
+  width: 350px;
+  height: 50px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  cursor: text;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+form.searchField button {
+  position: absolute;
+  background: #974cb0;
+  color: #fff;
+  right: 5px;
+  top: 9px;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+form.filters {
+  position: relative;
+  padding: 2px;
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+form.filters button {
+  background: #974cb0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.genre-filter {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  padding: 1px;
+  margin: auto;
+  width: 175px;
+  height: auto;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.order-filter {
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  padding: 1px;
+  margin: auto;
+  width: 175px;
+  height: auto;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.book {
+  position: relative;
+  padding: 25px 15px;
+  border: 2px solid #888888;
+  background-color: #d9dede;
+  margin: auto;
+  width: 75%;
+  align-items: center;
+  height: 200px;
+  box-shadow: 0 2px 5px #ccc;
+}
+.book-main {
+  height: 100px;
+  width: 100%;
+  background-color: #e9e3e3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.book-img {
+  border: 2px solid #000000;
+  width: 145px;
+  height: 187%;
+  float: left;
+  margin: 5px;
+}
+.book-name {
+  height: auto;
+  font-family: serif;
+  font-size: auto;
+  color: #1e2122;
+  flex: 1;
+  margin: auto;
+}
+.book-details {
+  height: 100px;
+  margin-top: 90px;
+  margin-left: 140px;
+  text-align: center;
+}
+.detail-info {
+  margin: 20px 0;
+  color: #524d4d;
+}
+.rendered-books {
+  padding-bottom: 8px;
+}
+.extended-view {
+  position: relative;
+  padding: 25px 15px;
+  border: 2px solid #888888;
+  background-color: #d9dede;
+  margin: auto;
+  width: 75%;
+  height: auto;
+  box-shadow: 0 2px 5px #ccc;
+}
+.extended-main {
+  height: 100px;
+  width: 100%;
+  background-color: #e9e3e3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.extended-name {
+  height: auto;
+  font-family: serif;
+  font-size: auto;
+  color: #1e2122;
+  flex: 1;
+  margin: auto;
+}
+#extended-img {
+  float: left;
+  border: 2px solid #000000;
+  width: 180px;
+  height: 250px;
+}
+.extended-details {
+  height: auto;
+  text-wrap: wrap;
+  line-height: 180%;
+  margin-top: 90px;
+}
+.reviews {
+  font-family: serif;
+  text-align: justify;
+}
+.past-reviews {
+  display: flex;
+  flex-direction: column-reverse;
+  height: auto;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.review {
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: auto;
+  margin: 16px;
+}
+.review h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.review p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+form.create-review {
+  position: relative;
+  width: auto;
+  margin: 30px auto 20px auto;
+  background: #e9e3e3;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-review Rating,
+form.create-review textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  resize: none;
+}
+form.create-review button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #974cb0;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
