@@ -9,7 +9,7 @@ app.use(express.static("public"));
 
 console.log("Attempting Mongoose Login");
 mongoose.connect(
-  "mongodb+srv://kdc392:S0cc3rk1d03!@cs-312.1old5sc.mongodb.net/libraryDB"
+  "mongodb+srv://[user]:[password]@cs-312.1old5sc.mongodb.net/libraryDB"
 );
 console.log("Mongoose Login Success");
 
